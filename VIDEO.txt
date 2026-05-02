@@ -1,7 +1,7 @@
 Walkthrough Video
 =================
 
-URL: [paste your Loom or YouTube unlisted link here]
+URL: https://www.loom.com/share/bca2a0cda8d54c1da4131b42ff9b0bb5
 
 Suggested video outline (3-5 min):
 1. (0:00) Open the app, show the sidebar — owned vs shared docs
