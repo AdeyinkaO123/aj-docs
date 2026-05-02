@@ -3,7 +3,7 @@
 ## Which AI tools I used
 
 - **Claude (claude.ai)** — used for the initial brainstorm and planning session: talking through architecture decisions, data model design, and feature scope before any code was written
-- **Claude Code** — used to scaffold and build the entire project from scratch (all 28+ files), run tests, debug issues, and iterate on features locally
+- **Claude Code** — Used to scaffold the project structure and accelerate implementation across 28+ files, working iteratively with my direction on architecture decisions, scope tradeoffs, and UX choices
 
 ---
 
@@ -13,7 +13,7 @@
 Instead of spending an hour mapping out the data model, API surface, and component structure, I used Claude as a thinking partner. We talked through tradeoffs — SQLite vs Supabase, HTML vs Tiptap JSON, single deployment vs split frontend/backend — and landed on decisions in minutes that would have taken much longer solo. The DB schema and component structure we agreed on before writing a line of code meant there were no structural surprises mid-build.
 
 **Full project scaffolding**
-Claude Code generated the entire working project — FastAPI routers, SQLAlchemy models, Pydantic schemas, Vite config, all React components, and the test suite — in a single session. FastAPI routers, SQLAlchemy models, Pydantic schemas, Vite config, and package.json are all genuinely tedious to write from scratch. I estimate this saved 2–3 hours of mechanical work and documentation lookup.
+AI accelerated the mechanical parts of setup that are tedious but not complex — boilerplate like FastAPI routers, SQLAlchemy models, Pydantic schemas, Vite config, and package.json. I estimate this saved 2–3 hours of implementation time and documentation lookup, which I redirected toward architecture decisions, UX details, and verifying correctness. All generated output was reviewed, and several pieces were adjusted or rejected before being accepted into the project
 
 **Tiptap integration**
 I had not used Tiptap before this project. Claude Code produced a working editor with the correct extensions (StarterKit, Underline) configured correctly on the first attempt, including the autosave debounce and stale-closure fix using refs — skipping the documentation spelunking that would have eaten significant time.
