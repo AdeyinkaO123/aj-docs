@@ -2,7 +2,7 @@
 
 A lightweight collaborative document editor. Create, edit, upload, and share documents with your team.
 
-**Live demo:** _[add your deployed URL here]_
+**Live demo:** https://aj-docs.onrender.com/
 
 ---
 
