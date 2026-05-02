@@ -1,0 +1,144 @@
+:root {
+  --bg-primary: #ffffff;
+  --bg-surface: #f8f9fa;
+  --border: #e5e7eb;
+  --accent: #7c3aed;
+  --accent-subtle: #f3f0ff;
+  --text-primary: #111827;
+  --text-muted: #6b7280;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Buttons */
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: opacity 0.15s;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+.btn-secondary:hover {
+  background: var(--bg-surface);
+}
+
+/* Sidebar doc row: show delete button on hover */
+.doc-row:hover .delete-btn {
+  opacity: 1 !important;
+}
+
+/* Tiptap editor content */
+.prose-editor {
+  outline: none;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.prose-editor .tiptap {
+  outline: none;
+  min-height: calc(100vh - 160px);
+}
+
+.prose-editor h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0.67em 0 0.33em;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+.prose-editor h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0.75em 0 0.33em;
+  line-height: 1.3;
+  color: var(--text-primary);
+}
+
+.prose-editor h3 {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin: 0.83em 0 0.33em;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.prose-editor p {
+  margin: 0.5em 0;
+  line-height: 1.75;
+  color: var(--text-primary);
+}
+
+.prose-editor ul,
+.prose-editor ol {
+  padding-left: 1.6em;
+  margin: 0.5em 0;
+}
+
+.prose-editor li {
+  line-height: 1.75;
+  margin: 0.2em 0;
+}
+
+.prose-editor blockquote {
+  border-left: 3px solid var(--accent);
+  padding-left: 1em;
+  color: var(--text-muted);
+  margin: 1em 0;
+  font-style: italic;
+}
+
+.prose-editor strong {
+  font-weight: 700;
+}
+
+.prose-editor em {
+  font-style: italic;
+}
+
+.prose-editor u {
+  text-decoration: underline;
+}
+
+/* Tiptap placeholder */
+.prose-editor .tiptap p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  color: var(--text-muted);
+  pointer-events: none;
+  height: 0;
+}
