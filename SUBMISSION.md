@@ -18,6 +18,8 @@
 
 **URL:** _[add your deployed URL here]_
 
+> **Note:** The app is hosted on Render's free tier. If the service has been inactive for 15+ minutes it will spin down and take ~30 seconds to cold-start on the first request. This is expected — just wait a moment and refresh if the page doesn't load immediately.
+
 ---
 
 ## Test accounts (seeded)

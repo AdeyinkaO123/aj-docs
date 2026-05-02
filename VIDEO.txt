@@ -1,1 +1,15 @@
-Walkthrough video: [add link here]
+Walkthrough Video
+=================
+
+URL: [paste your Loom or YouTube unlisted link here]
+
+Suggested video outline (3-5 min):
+1. (0:00) Open the app, show the sidebar — owned vs shared docs
+2. (0:30) Create a new document, rename it by clicking the title
+3. (1:00) Format content — bold, italic, headings, bullet list
+4. (1:30) Upload a .txt or .md file, show it opens as an editable doc
+5. (2:00) Switch to Alice, share doc with Bob
+6. (2:30) Switch to Bob — show doc appears in "Shared with Me"
+7. (3:00) Edit as Bob, switch back to Alice to show changes persisted
+8. (3:30) Briefly show the backend (FastAPI docs at /docs) and tests passing
+9. (4:00) Explain scope cuts and what you'd build next
